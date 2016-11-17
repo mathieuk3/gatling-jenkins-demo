@@ -16,5 +16,5 @@ class SimpleSimulation extends Simulation {
     scn.inject(
       atOnceUsers(1)))
     .protocols(httpProtocol)
-    .assertions(global.responseTime.max.lessThan(30))
+    .assertions(global.responseTime.max.lessThan(100))
 }
